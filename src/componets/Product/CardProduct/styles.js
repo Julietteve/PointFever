@@ -95,7 +95,7 @@ export const Container = styled.div`
     padding: 2rem;
     cursor:pointer;
     position: relative;
-    border: 1px #ebe9eb solid;
+    border: ${props=>props.border};
     transition: all .2s ease-in-out;
 
     &:hover {

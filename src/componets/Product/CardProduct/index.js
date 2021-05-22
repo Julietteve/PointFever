@@ -58,8 +58,8 @@ const CardProduct = ({imageProductURL, category, productName,cost, id, width }) 
 
     return (
         <>
-        <Container >
-        {!redeeming ? 
+        <Container border={redeeming? "0px #ffff solid" : "1px #ebe9eb solid"} >
+        {!redeeming ?  
             <div>
                {isAvailable ?
                 <BagAvailable>
