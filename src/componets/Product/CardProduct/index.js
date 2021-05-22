@@ -58,8 +58,8 @@ const CardProduct = ({imageProductURL, category, productName,cost, id, width }) 
 
     return (
         <>
-        {!redeeming ? 
         <Container >
+        {!redeeming ? 
             <div>
                {isAvailable ?
                 <BagAvailable>
@@ -100,15 +100,14 @@ const CardProduct = ({imageProductURL, category, productName,cost, id, width }) 
                 </>
                 }
             </div>
-        </Container>
             :  
-        <Container>
+       
             <Lottie options={defaultOptions}
-            height={400}
-            width={400}
+            height={300}
+            width={300}
             />   
-        </Container>
         }
+        </Container>
             {redeeming && 
             <ToastContainer
                 hideProgressBar
