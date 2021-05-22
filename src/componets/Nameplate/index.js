@@ -36,8 +36,6 @@ const Nameplate = ({toggle}) => {
         setAmountPoints(4000)
     }
 
-    var w = window.innerWidth;
-    
     return (
         <>
         <ContainerIcon>

@@ -1,18 +1,13 @@
-import React,{useState,useEffect} from 'react';
+import React,{useEffect} from 'react';
 import { Container, Icon, CloseIcon} from "./styles";
 import {useDispatch, useSelector} from 'react-redux';
-import {addPointsResetSuccess} from '../../redux/actions/pointsActions'
-import {getUser, postPoints} from '../../utils/services';
+import {getUser} from '../../utils/services';
 import {DataUser, NavIcon} from "../UserBar/styles"
-
-const categories = [ "Laptops", "Cameras", "Smart Home", "Audio", "Monitors & TV", "PC Accessories", "Gaming", "Tablets & E-readers","Phones","Drones","Phone Accessories","PC Accesories"]
 
 const MobileNav = ({isOpen,toggle}) => {
 
     const dispatch = useDispatch()
-    const [amountPoints, setAmountPoints] = useState(4000)
     const {userData} = useSelector((state)=> state.userReducer)
-    const {isLoading, hasError, success} = useSelector((state)=> state.pointsReducer)
     const {name,points} = userData
 
     useEffect(()=>{

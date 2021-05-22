@@ -23,7 +23,6 @@ const CardProduct = ({imageProductURL, category, productName,cost, id, width }) 
       };
 
     const dispatch = useDispatch()
-    const {isLoading,hasError,success} = useSelector((state)=>state.redeemProductsReducer)
     const {userData} = useSelector((state)=> state.userReducer)
     const {points} = userData
     const [redeeming, setRedeeming] = useState(false)

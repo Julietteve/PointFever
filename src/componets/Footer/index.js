@@ -1,5 +1,5 @@
 import React from 'react';
-import {Sponsor,ContainerSponsor,Author, Container, Brands} from './styles'
+import {Sponsor,Author, Container, Brands} from './styles'
 
 const Footer = () => {
     return (

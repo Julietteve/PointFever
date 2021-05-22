@@ -2,7 +2,6 @@ import {
     FETCH_PRODUCTS_START,
     FETCH_PRODUCTS_FAILURE,
     FETCH_PRODUCTS_SUCCESS,
-    RESET_FILTER,
 } 
 from '../actions';
 
